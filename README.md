@@ -1,2 +1,2 @@
-# imageHandler
-Reydesk Image Uploader
+
+# Typescript module

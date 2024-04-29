@@ -1,0 +1,47 @@
+{
+  "name": "image-handler",
+  "version": "1.0.0",
+  "description": "Reydesk's Image Uploader",
+  "main": "./dist/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "dev": "SET NODE_ENV=Development&& tsc-watch --onSuccess \"node ./dist/src/index.js\"",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "postinstall": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Netware-Labs/imagehandler.git"
+  },
+  "author": "Reydesk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Netware-Labs/imagehandler/issues"
+  },
+  "homepage": "https://github.com/Netware-Labs/imagehandler#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "envalid": "^8.0.0",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "joi": "^17.12.3",
+    "mongoose": "^8.3.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.4",
+    "@types/cors": "^2.8.15",
+    "@types/morgan": "^1.9.7",
+    "tslint": "^6.1.3",
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "typings": "./dist/index.d.ts"
+}
